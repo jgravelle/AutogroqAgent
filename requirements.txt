@@ -1,0 +1,3 @@
+pocketgroq
+streamlit
+html2text
