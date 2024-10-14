@@ -1,6 +1,6 @@
 # AutoGroqAgent
 
-![AutoGroqAgent Logo](path/to/logo.png)
+![image](https://github.com/user-attachments/assets/d143fc49-d4c4-4622-aaf6-48ed39f8c3e0)
 
 ## Showcase for PocketGroq's New AutonomousAgent
 
@@ -94,8 +94,11 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.  Mention J. Gravelle in your docs and code if you use any of this.  He's kinda full of himself...
 
 ---
 
 Unlock the full potential of AI with PocketGroq's AutonomousAgent. Try AutoGroqAgent today and experience the future of intelligent, self-driven AI assistants!
+
+![image](https://github.com/user-attachments/assets/5ae74ce9-c4f3-41ff-a7e5-90088dcee35c)
+
