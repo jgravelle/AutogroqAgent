@@ -65,10 +65,12 @@ def main():
         index=available_models.index(st.session_state.selected_model) if st.session_state.selected_model in available_models else 0,
         key='selected_model'
     )
-    # No need to manually update st.session_state.selected_model
 
     # Temperature slider
     temperature = st.slider("Temperature:", min_value=0.0, max_value=1.0, value=0.0, step=0.1, key='temperature')
+
+    # Add Verify checkbox
+    verify = st.checkbox("Double-Check (Find two distinct sources that agree)", key='verify')
 
     # Initialize the agent using the cached function
     agent = initialize_agent(api_key, st.session_state.selected_model, st.session_state.temperature)
@@ -100,7 +102,7 @@ def main():
             full_response = ""
             research_steps = []
             
-            for step in agent.process_request(prompt):
+            for step in agent.process_request(prompt, verify=verify):
                 if isinstance(step, dict) and 'type' in step:
                     if step['type'] == 'research':
                         research_steps.append(step['content'])
